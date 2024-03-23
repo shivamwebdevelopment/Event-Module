@@ -1,0 +1,221 @@
+.event-booklist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.user .user-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-image: url("https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: top;
+}
+.event-name input[type="text"] {
+  background-color: transparent;
+  border: 1px solid #666;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  padding: 5px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-block: 1rem;
+}
+
+.date-time-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  margin-block: 1rem;
+}
+
+.date-time-section input[type="datetime-local"] {
+  background-color: transparent;
+  border: 0.6px solid #666;
+  border-radius: 30px;
+  outline: none;
+  padding: 4px 10px;
+  width: 230px;
+}
+.location-contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+.location,
+.contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-block: 1rem;
+}
+.location input,
+.contact input {
+  padding: 4px 10px;
+  outline: none;
+  border-radius: 4px;
+  width: 260px;
+}
+.guests > input[type="number"] {
+  width: 160px !important;
+  padding: 4px 10px;
+  outline: none;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+.email > input[type="email"] {
+  padding: 4px 10px;
+  outline: none;
+  border-radius: 4px;
+  /* margin-left: 10px; */
+}
+
+.amount-section select {
+  width: 120px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #666;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-block: 1rem;
+}
+.amount-section select option {
+  background-color: #333 !important;
+  outline: none;
+  border: none;
+}
+.quantity {
+  border-right: 2px solid #05fad1;
+  padding-right: 8px;
+  margin-right: 0px;
+}
+
+.book-btn {
+  width: 200px;
+  border: 1px solid #05fad1;
+  background-color: #0ead93;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 0.4rem 1.2rem;
+  margin-block: 1.5rem;
+}
+
+/* Right side */
+.selected-img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.select-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.select-img img {
+  width: 100%;
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+  .event-booklist {
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .user .user-img {
+    width: 60px;
+    height: 60px;
+  }
+  .event-name input[type="text"] {
+    width: 260px !important;
+    font-size: 18px;
+  }
+  .contact input[type="number"] {
+    width: 225px !important;
+    margin-bottom: 0px;
+  }
+  .email input[type="email"] {
+    width: 225px !important;
+  }
+  .location input[type="text"] {
+    width: 225px !important;
+  }
+  .guests > input[type="number"] {
+    width: 116px !important;
+  }
+  .date-time-section .start-date input[type="datetime-local"] {
+    width: 210px !important;
+  }
+  .date-time-section .end-date input[type="datetime-local"] {
+    width: 235px !important;
+  }
+  .contact {
+    margin-block: 0px !important;
+  }
+  .email {
+    margin-block: 16px !important;
+  }
+  .location {
+    margin-top: 0px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .location-contact {
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0px;
+  }
+  .date-time-section {
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .event-booklist input {
+    width: fit-content !important;
+  }
+  .event-container {
+    padding: 15px !important;
+  }
+  .quantity-amount {
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px !important;
+  }
+  .quantity-amount input[type="number"] {
+    width: 60px !important;
+  }
+  .quantity {
+    border-right: none;
+    padding-right: none;
+    margin-right: none;
+  }
+}

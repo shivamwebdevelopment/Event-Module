@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Leana bezz",
+      "username": "Leana",
+      "email": "lean@gmail.com",
+      "phone": "954684545454",
+      "website": "skhubs.in"
+    },
+    {
+      "id": 2,
+      "name": "Ramesh Kumar",
+      "username": "ramesh",
+      "email": "ramesh@gmail.com",
+      "phone": "88545454",
+      "website": "ramesh.in"
+    },
+    {
+      "id": 3,
+      "name": "Suresh Kumar",
+      "username": "Suresh",
+      "email": "suresh@gmail.com",
+      "phone": "954684545454",
+      "website": "suresh.in"
+    }
+  ]
+}
